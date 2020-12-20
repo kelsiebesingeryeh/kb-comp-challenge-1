@@ -1,0 +1,23 @@
+* {
+    border: 1px solid red;
+}
+
+header {
+     background-color: black;
+     color: white;
+}
+
+.sub-header {
+    /* background-color: black;
+    color: white; */
+    display: inline-block;
+    margin: auto;
+    height: 15%;
+    /* width: 300px; */
+}
+
+.music-box-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
