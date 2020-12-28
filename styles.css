@@ -66,8 +66,10 @@ i {
     color: #D8F3DC;
 }
 
+/* MAIN DISPLAY */
+
 main {
-    padding: 1%;
+    padding: 2%;
     background-color: #95D5B2;
 }
 
@@ -78,43 +80,101 @@ h2 {
 .recipe-card-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: .5em;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "card-1 card-2 card-3 card-4"
+    "card-5, card-6, card-7, card-8";
+    grid-gap: 0.5rem;
     color: #253237;
 }
+
+/* CARDS DISPLAY */
 
 .card {
     background-color: white;
     border: 1px solid #2D6A4F;
 }
-.icon-image-styling {
-    position: relative;
+
+/* .card-image {
+    display: flex;
+    flex-direction: row;
+} */
+
+.mac-and-cheese {
+    background-image: url('https://images.unsplash.com/photo-1543339503-6dffa8e76647?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+}
+
+.queso {
+    background-image: url("https://images.unsplash.com/photo-1572040975635-c561ad4f2fd5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+}
+
+.lasagna {
+    background-image: url("https://images.unsplash.com/photo-1606156662742-6372c8da0986?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80");
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 100px;
+}
+
+.ramen {
+    background-image: url('https://images.unsplash.com/photo-1569562211093-4ed0d0758f12?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+}
+
+.dumplings {
+    background-image: url('https://images.unsplash.com/photo-1583224994076-ae951d019af7?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8ZHVtcGxpbmdzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+}
+
+.smoothie-bowl {
+    background-image: url('https://images.unsplash.com/photo-1557568951-a691f75c810f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+}
+
+.pizza {
+    background-image: url('https://images.unsplash.com/photo-1591722889175-f66ee6b51775?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+}
+
+.soba-noodle {
+    background-image: url('https://images.unsplash.com/photo-1516901121982-4ba280115a36?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
 }
 
 .fa-arrow-alt-circle-right {
-    position: absolute;
-    top: 5%;
-    left: 2%;
-    z-index: 1;
-    color: white;
     font-size: 3em;
+}
+
+.card-views {
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .views {
     margin: 0;
-    text-align: right;
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    color:white;
+    margin-top: -14%;
 }
 
 .numViews {
-    margin: 0;
-    text-align: right;
-    position: absolute;
-    top: 15%;
-    right: 5%;
     font-size: 2em;
+    margin-top: 0%;
     color:white;
 }
 
@@ -163,4 +223,67 @@ h2 {
 .number {
     font-size: 2em;
     color: #52B788;
+}
+
+/* Smartphones  ----------- */
+
+@media screen and (max-width: 500px) {
+
+    .username-button {
+
+    }
+
+    .plant-logo {
+        font-size: 3em;
+    }
+    
+
+    .fa-share-alt,
+    .fa-list-ul,
+    .fa-user {
+        font-size: 1.5em;
+        padding-left: 10%;
+    }
+
+    .shares-text,
+    .recipe-text,
+    .video-text {
+        display: none;
+    }
+
+    .card {
+        width: 90vw;
+    }
+
+    .card-image {
+        height: 30vh;
+    }
+
+    .card-views {
+        padding: 2%;
+    }
+
+    .card-content {
+        font-size: 1.5em;
+    }
+
+    .URL {
+        height: 6vh;
+    }
+
+    .recipe-card-container {
+        grid-template-columns: 1.5fr;
+        grid-template-rows: 2fr;
+        place-items: center;
+        grid-template-areas: 
+        "card-1"
+        "card-2"
+        "card-3"
+        "card-4"
+        "card-5"
+        "card-6"
+        "card-7"
+        "card-8";
+        width: auto;
+    }
 }
