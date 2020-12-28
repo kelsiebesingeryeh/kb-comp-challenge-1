@@ -1,23 +1,166 @@
 * {
-    border: 1px solid red;
+    box-sizing: border-box;
 }
 
-header {
-     background-color: black;
-     color: white;
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #95D5B2;
 }
 
-.sub-header {
-    /* background-color: black;
-    color: white; */
-    display: inline-block;
+.username-button {
+    text-align: right;
+    background-color: #1B4332;
+    margin: 0;
+    padding: 10px;
+    color: #D8F3DC;
+    font-size: .75em;
+}
+
+.fa-user-circle {
+    margin-right: 2%;
+}
+
+.fa-sort-down {
+    margin-left: 1%;
+    font-size: 1.5em;
+}
+
+.plant-logo {
+    text-align: right;
     margin: auto;
-    height: 15%;
-    /* width: 300px; */
+    font-size: 5em;
 }
 
-.music-box-container {
+.container {
+     display: grid;
+     grid-template-columns: repeat(5, 1fr);
+     background-color: #1B4332;
+     list-style: none;
+     color: #D8F3DC;
+     height: 10vh;
+}
+
+.shares,
+.recipes,
+.personal-videos {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-right: 50%;
+    white-space: nowrap;
+}
+
+.recipes {
+    padding-right: 45%;
+}
+
+.personal-videos {
+    padding-right: 50%;
+}
+
+i {
+    margin-right: 10px;
+    color: #D8F3DC;
+}
+
+main {
+    padding: 1%;
+    background-color: #95D5B2;
+}
+
+h2 {
+    background-color: #95D5B2;
+}
+
+.recipe-card-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
+    grid-gap: .5em;
+    color: #253237;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #2D6A4F;
+}
+.icon-image-styling {
+    position: relative;
+}
+
+.fa-arrow-alt-circle-right {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    z-index: 1;
+    color: white;
+    font-size: 3em;
+}
+
+.views {
+    margin: 0;
+    text-align: right;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    color:white;
+}
+
+.numViews {
+    margin: 0;
+    text-align: right;
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    font-size: 2em;
+    color:white;
+}
+
+.recipe-image {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.card-content {
+    padding-left: 5%;
+    margin-bottom: -5%;
+}
+
+.date, 
+.type-recipe,
+.number {
+    margin-top: -6%;
+}
+
+.recipe {
+    font-size: .8em;
+}
+
+.type-recipe,
+.attachment {
+    font-size: .8em;
+}
+
+.date {
+    font-size: .65em;
+    color: #2D6A4F;
+}
+
+.URL {
+    background-color: #B7E4C7;
+    height: 15%;
+    color: #253237;
+    width: 90%;
+    margin: 0;
+    font-size: .65em;
+    height: 3vh;
+    padding: 3%;
+}
+
+.number {
+    font-size: 2em;
+    color: #52B788;
 }
