@@ -121,7 +121,7 @@ h2 {
 }
 
 .dumplings {
-    background-image: url('https://images.unsplash.com/photo-1583224994076-ae951d019af7?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8ZHVtcGxpbmdzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60');
+    background-image: url('https://images.unsplash.com/photo-1583224994076-ae951d019af7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80');
 }
 
 .smoothie-bowl {
@@ -172,7 +172,7 @@ h2 {
 .date,
 .type-recipe,
 .number {
-    margin-top: -5%;
+    margin-top: -3%;
 }
 
 .recipe {
@@ -186,7 +186,7 @@ h2 {
 
 .date {
     color: #2D6A4F;
-    font-size: .65em;
+    font-size: 1em;
 }
 
 .URL {
@@ -202,6 +202,34 @@ h2 {
     color: #52B788;
     font-size: 2em;
 }
+
+/* LARGE SCREENS */
+
+@media screen and (min-width: 1800ox){
+
+    .fa-share-alt,
+    .fa-list-ul,
+    .fa-user {
+        font-size: 2em;
+    }
+
+    .card-image {
+        height: 30vh;
+    }
+
+    .card-views {
+        padding: 2%;
+    }
+
+    .card-content {
+        font-size: 2em;
+    }
+
+    .URL {
+        height: 6vh;
+    }
+}
+
 
 /* TABLETS */
 
