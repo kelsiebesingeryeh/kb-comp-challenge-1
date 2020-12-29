@@ -258,6 +258,11 @@ h2 {
         font-size: 2rem;
     }
 
+    .recipe,
+    .recipe-type {
+        font-size: 1.2rem;
+    }
+
     .URL {
         height: 6vh;
     }
