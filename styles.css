@@ -203,6 +203,23 @@ h2 {
     font-size: 2em;
 }
 
+/* LARGE SCREENS */ 
+@media screen and (min-width: 1800px) {
+    .card-image {
+        height: 30vh;
+    }
+
+    .card-views {
+        margin-top: -7%;
+        padding: 2%;
+    }
+
+    .card-content {
+        font-size: 2em;
+    }
+
+}
+
 /* TABLETS */
 
 @media screen and (min-width: 501px) and (max-width: 1024px) {
