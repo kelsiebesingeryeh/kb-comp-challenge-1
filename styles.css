@@ -18,21 +18,15 @@ body {
 .username-button {
     background-color: #1B4332;
     color: #D8F3DC;
-    font-size: .75em;
+    font-size: .80rem;
     margin: 0;
-    padding: 10px;
+    padding: 1rem;
     text-align: right;
 }
 
 .fa-sort-down {
-    font-size: 1.5em;
-    margin-left: 1%;
-}
-
-.plant-logo {
-    font-size: 5em;
-    margin: auto;
-    text-align: right;
+    font-size: 1.5rem;
+    margin-left: .5rem;
 }
 
 /* NAVIGATION MENU */
@@ -64,9 +58,15 @@ body {
     padding-right: 50%;
 }
 
+.plant-logo {
+    font-size: 5rem;
+    margin: auto;
+    text-align: right;
+}
+
 i {
     color: #D8F3DC;
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 
 /* MAIN DISPLAY */
@@ -101,7 +101,7 @@ h2 {
 .card-image {
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200px;
+    height: 20vh;
 }
 
 .mac-and-cheese {
@@ -137,7 +137,7 @@ h2 {
 }
 
 .fa-arrow-alt-circle-right {
-    font-size: 3em;
+    font-size: 3rem;
 }
 
 .card-views {
@@ -155,7 +155,7 @@ h2 {
 
 .numViews {
     color: white;
-    font-size: 2em;
+    font-size: 2rem;
     margin-top: 0%;
 }
 
@@ -176,23 +176,23 @@ h2 {
 }
 
 .recipe {
-    font-size: .8em;
+    font-size: .8rem;
 }
 
 .type-recipe,
 .attachment {
-    font-size: .8em;
+    font-size: .8rem;
 }
 
 .date {
     color: #2D6A4F;
-    font-size: .65em;
+    font-size: .65rem;
 }
 
 .URL {
     background-color: #B7E4C7;
     color: #253237;
-    font-size: .65em;
+    font-size: .65rem;
     height: 3vh;
     padding: 3%;
     width: 90%;
@@ -200,7 +200,7 @@ h2 {
 
 .number {
     color: #52B788;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 /* LARGE SCREENS */ 
@@ -215,7 +215,7 @@ h2 {
     }
 
     .card-content {
-        font-size: 2em;
+        font-size: 2rem;
     }
 
 }
@@ -225,13 +225,13 @@ h2 {
 @media screen and (min-width: 501px) and (max-width: 1024px) {
 
     .plant-logo {
-        font-size: 3em;
+        font-size: 3rem;
     }
 
     .fa-share-alt,
     .fa-list-ul,
     .fa-user {
-        font-size: 2em;
+        font-size: 2rem;
         padding-left: 10%;
     }
 
@@ -255,7 +255,7 @@ h2 {
     }
 
     .card-content {
-        font-size: 2em;
+        font-size: 2rem;
     }
 
     .URL {
@@ -285,13 +285,13 @@ h2 {
 
 
     .plant-logo {
-        font-size: 3em;
+        font-size: 3rem;
     }
 
     .fa-share-alt,
     .fa-list-ul,
     .fa-user {
-        font-size: 1.5em;
+        font-size: 1.5rem;
         padding-left: 10%;
     }
 
@@ -310,7 +310,7 @@ h2 {
     }
 
     .card-content {
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 
     .URL {
