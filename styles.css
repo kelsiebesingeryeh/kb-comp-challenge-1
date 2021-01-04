@@ -18,15 +18,21 @@ body {
 .username-button {
     background-color: #1B4332;
     color: #D8F3DC;
-    font-size: .80rem;
+    font-size: .75em;
     margin: 0;
-    padding: 1rem;
+    padding: 10px;
     text-align: right;
 }
 
 .fa-sort-down {
-    font-size: 1.5rem;
-    margin-left: .5rem;
+    font-size: 1.5em;
+    margin-left: 1%;
+}
+
+.plant-logo {
+    font-size: 5em;
+    margin: auto;
+    text-align: right;
 }
 
 /* NAVIGATION MENU */
@@ -58,15 +64,9 @@ body {
     padding-right: 50%;
 }
 
-.plant-logo {
-    font-size: 5rem;
-    margin: auto;
-    text-align: right;
-}
-
 i {
     color: #D8F3DC;
-    margin-right: 1rem;
+    margin-right: 10px;
 }
 
 /* MAIN DISPLAY */
@@ -96,13 +96,18 @@ h2 {
 .card {
     background-color: white;
     border: 2px solid #2D6A4F;
+    box-shadow: 1px 1px #1B4332;
 }
 
 .card-image {
     background-repeat: no-repeat;
     background-size: cover;
-    height: 20vh;
+    height: 200px;
 }
+
+/* p {
+    line-height: 1.5;
+} */
 
 .mac-and-cheese {
     background-image: url('https://images.unsplash.com/photo-1543339503-6dffa8e76647?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
@@ -137,7 +142,7 @@ h2 {
 }
 
 .fa-arrow-alt-circle-right {
-    font-size: 3rem;
+    font-size: 3em;
 }
 
 .card-views {
@@ -155,7 +160,7 @@ h2 {
 
 .numViews {
     color: white;
-    font-size: 2rem;
+    font-size: 2em;
     margin-top: 0%;
 }
 
@@ -167,6 +172,7 @@ h2 {
 
 .card-content {
     padding-left: 5%;
+    line-height: 1.5;
 }
 
 .date,
@@ -176,31 +182,30 @@ h2 {
 }
 
 .recipe {
-    font-size: .8rem;
+    font-size: .8em;
 }
 
 .type-recipe,
 .attachment {
-    font-size: .8rem;
+    font-size: .8em;
 }
 
 .date {
     color: #2D6A4F;
-    font-size: .65rem;
+    font-size: .65em;
 }
 
 .URL {
     background-color: #B7E4C7;
     color: #253237;
-    font-size: .65rem;
-    height: 3vh;
-    padding: 3%;
+    font-size: .65em;
+    padding: 10px;
     width: 90%;
 }
 
 .number {
     color: #52B788;
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 /* LARGE SCREENS */ 
@@ -215,7 +220,7 @@ h2 {
     }
 
     .card-content {
-        font-size: 2rem;
+        font-size: 2em;
     }
 
 }
@@ -225,13 +230,13 @@ h2 {
 @media screen and (min-width: 501px) and (max-width: 1024px) {
 
     .plant-logo {
-        font-size: 3rem;
+        font-size: 3em;
     }
 
     .fa-share-alt,
     .fa-list-ul,
     .fa-user {
-        font-size: 2rem;
+        font-size: 2em;
         padding-left: 10%;
     }
 
@@ -255,11 +260,7 @@ h2 {
     }
 
     .card-content {
-        font-size: 2rem;
-    }
-
-    .URL {
-        height: 6vh;
+        font-size: 2em;
     }
 
     .recipe-card-container {
@@ -285,13 +286,13 @@ h2 {
 
 
     .plant-logo {
-        font-size: 3rem;
+        font-size: 3em;
     }
 
     .fa-share-alt,
     .fa-list-ul,
     .fa-user {
-        font-size: 1.5rem;
+        font-size: 1.5em;
         padding-left: 10%;
     }
 
@@ -310,11 +311,7 @@ h2 {
     }
 
     .card-content {
-        font-size: 1.5rem;
-    }
-
-    .URL {
-        height: 6vh;
+        font-size: 1.5em;
     }
 
     .recipe-card-container {
